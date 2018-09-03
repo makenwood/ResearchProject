@@ -26,6 +26,7 @@ public class Controller {
 		testcodonsequence.PrintCodons();
 		testaminoacidsequence.printAminoAcids();
 		
+		
 		cAA = new Compare(refcodonsequence.getCodon(),testcodonsequence.getCodon());
 		cAA.compareCodons();
 		cAA.printDif();
