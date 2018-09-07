@@ -12,15 +12,18 @@ public class Controller {
 	public static Compare cAA;
 	public static void main(String[] args) {
 		
-		System.out.println("Enter your reference DNA strand");
-		refsequence = getInput();
+		/*System.out.println("Enter your reference DNA strand");
+		/refsequence = getInput();*/
+		
+		TextReader tr = new TextReader();
+		
 		refcodonsequence  = new CodonSequence (refsequence);
 		refaminoacidsequence = new AminoAcidSequence(refcodonsequence.getCodon());
 		refcodonsequence.PrintCodons();
 		refaminoacidsequence.printAminoAcids();
 		
-		System.out.println("Enter your test DNA strand");
-		testsequence = getInput();
+		/*System.out.println("Enter your test DNA strand");
+		testsequence = getInput();*/
 		testcodonsequence  = new CodonSequence (testsequence);
 		testaminoacidsequence = new AminoAcidSequence(testcodonsequence.getCodon());
 		testcodonsequence.PrintCodons();
