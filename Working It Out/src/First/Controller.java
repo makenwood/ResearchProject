@@ -1,5 +1,6 @@
 package First;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Controller {
@@ -10,6 +11,7 @@ public class Controller {
 	public static CodonSequence refcodonsequence;
 	public static AminoAcidSequence refaminoacidsequence;
 	public static Compare cAA;
+	public static LinkedList<DnaStrand> dnastrands;
 	public static void main(String[] args) {
 		
 		/*System.out.println("Enter your reference DNA strand");

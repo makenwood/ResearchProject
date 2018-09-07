@@ -45,8 +45,6 @@ private LinkedList<DnaStrand> dnastrands;
 		}
 	}
 	
-	private void getDNAString(String str) {
-		
-	}
+	
 	
 }
